@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: url('/img/page.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+}
+
+button.cancel {
+  background-color: #2b0704;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.cancel:hover {
+  background-color: #c26b6b;
+}

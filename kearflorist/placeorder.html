@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/placeorder.css">
+    <title>Florist Shop</title>
+    
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="logo" class="logo">KEAR</a>
+     <ul class="navbar">
+       <li class="link-item"><a href="index.html" class="link">Home</a></li> 
+       <li class="link-item"><a href="Gallery.html" class="link">Gallery</a></li>
+       <li class="link-item"><a href="Theme.html" class="link">Theme</a></li>
+       <li class="link-item"><a href="placeorder.html" class="link">Place Order</a></li>
+     </ul> 
+    <div class="h-icons"> 
+       <a href="phone.html"><i class='bx bx-phone'></i></a>
+       <a href="heart.html"><i class='bx bx-heart' ></i></a>
+    </div>
+    </header>
+    <main>
+        <form action="submit-form.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+    
+          <button type="submit" value="Submit" id="submitBtn">Submit</button>
+          <div class="feedback" id="successMsg">Your Order submitted successfully!</div>
+
+        </form>
+      </main>
+
+      <script src="js/script.js"></script>
+
+      <footer style="display:flex; justify-content: center; align-items: center; height: 100px;">
+        @2023 Kear Shop. All Rights Reserved.
+      </footer>
+
+  </body>
+</html>

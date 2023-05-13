@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="scroll">
+    >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Florist Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-image: url('/img/bg-final.jpg');
+    background-size: cover;
+    }
+
+    .grid-item {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .grid-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.10s ease-in-out;
+    }
+
+    .grid-item:hover img {
+    transform: scale(1.1);
+    }
+
+    .grid-item p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    }
+
+    .grid-item:hover p {
+    opacity: 1;
+    }
+
+    .long-text {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    }
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="logo" class="logo">KEAR</a>
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>  
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="theme.html">Theme</a></li>
+      <li><a href="placeorder.html">Place Order</a></li>
+    </ul> 
+    <div class="h-icons">
+       <a href="phone.html"><i class='bx bx-phone'></i></a>
+       <a href="heart.html"><i class='bx bx-heart' ></i></a>
+    </div>
+
+    </header>
+    
+    <section class="home">
+        <div class="home-text">
+            <h1>PickNChoose</h1>
+            <p>We offer vintage and design you want to style for a dried flower that appropriate for Birthday, Anniversary, Get well, New Baby, Sympathy, Holidays.</p>
+           <a href="gallery.html" class="btn">Shop Now</a>
+        </div>  
+    </section>
+
+    <div class="grid">
+		<div class="grid-item">
+			<img src="img/bg-scroll1.jpg" alt="scroll1">
+			<p>Types of a Dried Flowers</p>
+		</div>
+		<div class="grid-item">
+			<img src="img/bg-scroll2.png" alt="scroll2">
+			<p>Types of a Dried Flowers</p>
+		</div>
+		<div class="grid-item">
+			<img src="img/bg-scroll3.jpg" alt="scroll3">
+			<p>Types of a Dried Flowers</p>
+		</div>
+		<div class="grid-item">
+			<img src="img/bg-scroll4.jpg" alt="scroll4">
+			<p>Types of a Dried Flowers</p>
+		</div>
+		<div class="grid-item">
+			<img src="img/bg-scroll5.jpg" alt="scroll5">
+			<p>Types of a Dried Flowers</p>
+		</div>
+		<div class="grid-item">
+			<img src="img/bg-scroll6.jpg" alt="scroll6">
+			<p>Types of a Dried Flowers</p>
+		</div>
+	</div>
+
+	<div class="long-text">
+		<p>Flowers are pretty bunches made just for someone you care about. You can make them just the way your friend likes, and choose how much money you want to spend. The cost depends on the types of flowers and how they look together. You don't have to make fancy flower arrangements to show someone you care. Even a simple bunch of flowers can let them know you love them.</p>
+    </div>
+
+    <footer style="display:flex; justify-content: center; align-items: center; height: 100px;">
+        @2023 Florist Kear. All Rights Reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
